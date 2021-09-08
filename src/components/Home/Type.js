@@ -3,19 +3,28 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
+    <>
     <Typewriter
       options={{
         strings: [
           "Open Source Contributor",
           "Circuit Design",
-          "RISC-V Enthusiast",
+          "RISC-V",
+          "Verification",
+          "FPGAs",
+          "ROS",
+          "Industrial Automation",
+
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 40,
       }}
     />
+
+  </>
   );
 }
 
 export default Type;
+

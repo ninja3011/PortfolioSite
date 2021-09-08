@@ -3,8 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
+import eyantra from "../../Assets/Projects/eyantra.jpeg";
 import lfx from "../../Assets/Projects/lfx.png";
 import riscv_cpu from "../../Assets/Projects/riscv_cpu.png";
 import delta from "../../Assets/Projects/delta.png";
@@ -39,8 +38,8 @@ function Projects() {
               imgPath={gsoc}
               isBlog={false}
               title="Block Based Circuit Design"
-              org = "Google Summer of Code"
-              description=" A Block-Based TL-Verilog solution for developers and new entrants to the sphere. Powered by Blockly from Google, it delivers a simple, concise, and intuitive gateway to Circuit Design."
+              org = "Google Summer of Code @ FOSSi Foundation"
+              description=" A Block-Based TL-Verilog solution for developers and new entrants to the sphere. Powered by Blockly from Google, it delivers a simple, concise, and intuitive gateway to Circuit Design.  By the gamification of the process, it makes learning and tinkering with circuit design fun, further tearing down the barriers to entry."
               link="https://github.com/ninja3011/Block_Based_Circuit_Design"
             />
           </Col>
@@ -73,12 +72,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={delta}
+              imgPath={eyantra}
               isBlog={false}
               title="Vitarana Drone"
               org = "Eyantra @IIT Bombay | Top 25"
-              description=" Under the mentorship of Dr. Faruk Kazi, Designed and Manufactured a bot for a problem faced by the packaging Industry when dealing with varied sized items such is the case
-              with subscription boxes. Received over Rs 16 Lakh in-kind equipment grant from Delta Electronics to build PoC under #Smart #Automation theme of #IIoT. "
+              description="Vitarana i.e. distribution drone is an UAV designed in Gazebo and controlled using ROS for disaster management and delivery pick and drop drone on a scheduler algorithm with path planning using waypoint navigation"
               link="https://github.com/dhruvi29/EYRC-VD1632"
             />
           </Col>

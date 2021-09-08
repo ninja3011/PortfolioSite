@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumyajit.tech/"
+                href="https://ninja3011.github.io/Block_Based_Circuit_Design/"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -4,15 +4,15 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Behera.pdf";
+import pdf from "../../Assets/NinadJangleResume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
   const [spojRank, upadteSpojRank] = useState(0);
   const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
+  const [sem, upadateSem] = useState(5);
+  const [cgpa, upadteCgpa] = useState(9.52);
 
   useEffect(() => {
     axios
@@ -42,52 +42,81 @@ function Resume() {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
-              date="June 2020 - August 2020"
+              title="Open Source Developer [ LFX Mentorship @ RISC-V ]"
+              date="September 2021 - Present"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
+                " Cross compiling Spidermonkey for RISC-V",
+                " Made a riscv64 image on qemu to run native builds",
+                " Built Spidermonkey on x86 and ran benchmarks",
+                " Ran regression tests on spidermonkey post changes"
+              ]}
+            />
+            <Resumecontent
+              title="Open Source Developer [ Google Summer Of Code @ FOSSi Foundation ]"
+              date="June 2021 - September 2021"
+              content={[
+                " Designing and Developed a TL-Verilog solution for developers and new entrants to the sphere.",
+                " Powered by Blockly from Google, it will deliver a simple, concise, and intuitive gateway to Circuit Design.",
+                " Developed a TL-Verilog Generator from scratch in JavaScript and developed a dashboard for visualising it with Blockly.",
+                " Tested and Presented the solution at a seminar showcasing its power of designing complex circuits of validity tutorials and memory based calculators using simple drag and drop feature of blocks.",
+                " Researched and Calibrated non-documented instructions from the JS based Blockly library and realised the intended designs and blocks."
+              ]}
+            />
+            <Resumecontent
+              title="Team Leader, Indian Division Representative [ 7th International Delta Automation Cup ]"
+              date="May 2021 - July 2021"
+              content={[
+                " Designed a solution for a problem faced by the packaging Industry when dealing with varied sized items such is the case with subscription boxes.",
+                " Developed the project through the whole life-cycle from design to modelling to manufacturing and programming of the system.",
+                " Calibrated mechanical and software offsets and achieved an efficient working model.",
+                " Networked and implemented a system using a PLC, Servo Drivers, Machine Vision System, IIOT devices.",
+                " Received the Second Prize in the Finals i.e. Ranked in Top 40."
               ]}
             />
             <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
+              title="MOOC Binger"
               content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
+                "Successfully Built a 16 Bit HACK Microprocessor by following the Nand2Tetris Course on Coursera. Along with various other up-skilling courses.",
               ]}
             />
             <Resumecontent
-              title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
+              title="Electronics Head [ SRA, VJTI ]"
               content={[
-                "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
+                " Conducted Trainings for Juniors and peers on projects based on ROS and TL-Verilog. Ranked third in an intra-club SLAM Competition in which we built a DDR that performs grid solving, line following using cv2, QR decoder and more",
               ]}
             />
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              title="Electronics Engineering [VJTI, Mumbai] "
+              date="2019 - Present"
+              content={[`CGPA: 9.52 (Till 4th Sem)`]}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
+              title="Coursework [Monash, Melbourne]"
+              date="2017 - 2018"
+              content={["Cmpleted 36 Credits towards B.E Honors" ]}
+            />
+            <Resumecontent
+              title="12TH BOARD [R.N. Podar, Mumbai ]"
               date="2015 - 2017"
-              content={["Precentage: 88%"]}
+              content={["Precentage: 92%"]}
             />
             <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
+              title="10TH BOARD [H.F.S, Mumbai] "
               date="2005 - 2015"
-              content={["Precentage: 86%"]}
+              content={["Precentage: 95.8%"]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                `Current rank in Branch (Electronics) : 1`,
+                `2nd Prize in International Delta Automation Cup (Top 40)`,
+                "Top 25 teams in Eyantra 2020-21",
+                "Selected as Upcoming Summer Intern for JP Morgan ",
               ]}
             />
           </Col>
