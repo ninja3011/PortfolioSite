@@ -32,7 +32,7 @@ function Home2() {
               loop: true,
               deleteSpeed: 80,
             }}
-          />
+          /><br></br>
             <p className="home-about-body">
               I fell in love with RISC-V and Circuit Design last december and I have tried my best 
               to learn as much as I could on it.🤷‍♂️
